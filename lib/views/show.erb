@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <title>Potin</title>
+  </head>
+  <body>
+    <p>Voici le numéro du potin que tu veux : <%= params['id'] %> </p>
+    <% Gossip.find(params["id"].to_i) %>
+  </body>
+</html>
