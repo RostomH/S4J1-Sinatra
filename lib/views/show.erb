@@ -3,7 +3,9 @@
     <title>Potin</title>
   </head>
   <body>
-    <p>Voici le numéro du potin que tu veux : <%= params['id'] %> </p>
-    <% Gossip.find(params["id"].to_i) %>
+    <p>Voici la page du potin numéro <%= params['id'] %> </p><br>
+    <p>Son auteur : <%= gossips.author %></p>
+    <p>Le contenu du potin : <%= gossips.content %></p><br>
+    <p>Pour revenir à la page des potins, clique <a href="/">ici</a></p>
   </body>
 </html>

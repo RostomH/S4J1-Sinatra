@@ -25,7 +25,7 @@ class Gossip
 
   def self.find(id)
     gossips = Gossip.all
-    return gossips[id - 1].content
+    return gossips[id - 1]
   end
 
 
